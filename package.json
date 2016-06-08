@@ -1,0 +1,63 @@
+{
+  "name": "react_boilerplate",
+  "description": "",
+  "version": "0.1.0",
+  "author": "Tao Zhang",
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://github.com/GameRubyPhone/react_boilerplate",
+  "bugs": {
+    "url": "https://github.com/GameRubyPhone/react_boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GameRubyPhone/react_boilerplate.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "node server.js",
+    "test": "node_modules/.bin/karma start karma.config.js",
+    "test:mocha": "mocha --compilers js:babel-register --require ./test/test_helper.js --recursive",
+    "test:watch": "npm test:mocha -- --watch",
+    "test:coverage": "babel-node `npm bin`/isparta cover --include 'src/**/*.js' --include 'test/**/*.spec.js' _mocha -- --bail"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "yargs": "^4.7.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "enzyme": "^1.2.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "isparta": "^4.0.0",
+    "istanbul": "^0.4.3",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^1.0.1",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.5.3",
+    "node-sass": "^3.7.0",
+    "phantomjs": "^2.1.7",
+    "phantomjs-polyfill": "0.0.2",
+    "phantomjs-prebuilt": "^2.1.7",
+    "react-addons-test-utils": "^15.1.0",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.2.0",
+    "sinon": "^1.17.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.0"
+  }
+}

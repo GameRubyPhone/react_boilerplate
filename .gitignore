@@ -1,0 +1,8 @@
+*.log
+.DS_Store
+.nvmrc
+node_modules
+/.bundle
+
+/coverage/
+/dist/
